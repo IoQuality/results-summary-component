@@ -19,10 +19,6 @@ body {
     background-image: linear-gradient(0deg, hsla(256, 72%, 46%, 1), hsl(234, 85%, 45%) , hsl(252, 100%, 67%));
     color: hsl(0, 0%, 100%);
     padding: 20px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .circle {
@@ -137,6 +133,10 @@ h1 {
 @media (max-width: 767px) {
     .result-summary {
         border-radius: 0px 0px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
 }
@@ -152,6 +152,10 @@ h1 {
         width: 50%;
         border-radius: 20px;
         max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .detailed-summary {
         width: 50%;
