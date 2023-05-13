@@ -119,13 +119,6 @@ button:hover {
 .slash {
     margin-left: 5px;
 }
-
-@media (max-width: 600px) {
-    body {
-      font-size: 14px;
-    }
-  }
-
   
 h3 {
     margin-top: 10px;
