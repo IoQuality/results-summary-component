@@ -11,6 +11,7 @@ body {
     text-align: center;
     margin: 0;
     max-width: 100%;
+    min-width: 375px;
     overflow-x: hidden;
 }
 
@@ -42,6 +43,10 @@ body {
 
 .summary {
     margin: 20px 0px;
+}
+
+.light-text {
+    color: hsl(241, 100%, 89%);
 }
 
 .left-aligned {
@@ -141,7 +146,7 @@ h1 {
     .result-summary {
         width: 50%;
         border-radius: 20px;
-        max-width: 200px;
+        max-width: 300px;
     }
     .detailed-summary {
         width: 50%;
