@@ -18,7 +18,6 @@ body {
 .result-summary {
     background-image: linear-gradient(0deg, hsla(256, 72%, 46%, 1), hsl(234, 85%, 45%) , hsl(252, 100%, 67%));
     color: hsl(0, 0%, 100%);
-    border-radius: 0px 0px 20px 20px;
     padding: 20px 50px;
     display: flex;
     flex-direction: column;
@@ -57,10 +56,6 @@ div p {
     font-weight: lighter;
 }
 
-.bold {
-    font-weight: 1000;
-}
-
 .regular {
     font-weight: 500;
 }
@@ -69,6 +64,10 @@ div p {
     font-weight: 100;
 }
 
+
+.bold {
+    font-weight: 1000;
+}
 
 .result {
     border-radius: 10px;
@@ -135,8 +134,14 @@ h1 {
     margin-top: 20px;
     margin-bottom: 0px;
 }
+@media (max-width: 767px) {
+    .result-summary {
+        border-radius: 0px 0px 20px 20px;
+    }
 
-@media (min-width: 600px) {
+}
+
+@media (min-width: 768px) {
     .desktop-container {
         display: flex;
         align-self: center;
