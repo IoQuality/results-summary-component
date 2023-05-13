@@ -3,22 +3,13 @@ html {
     display: flex;
     align-content: center;
     justify-content: center;
+    text-align: center;
 }
 
 body {
     background-color: white;
     font-family: "Hanken Grotesk";
-    text-align: center;
     margin: 0;
-    max-width: 100%;
-    min-width: 375px;
-    overflow-x: hidden;
-}
-
-.result-summary {
-    background-image: linear-gradient(0deg, hsla(256, 72%, 46%, 1), hsl(234, 85%, 45%) , hsl(252, 100%, 67%));
-    color: hsl(0, 0%, 100%);
-    padding: 20px 50px;
 }
 
 .circle {
@@ -28,12 +19,19 @@ body {
     border-radius: 50%;
     align-self: center;
     margin: 20px 0px;
-    
 }
+
+.result-summary {
+    background-image: linear-gradient(0deg, hsla(256, 72%, 46%, 1), hsl(234, 85%, 45%) , hsl(252, 100%, 67%));
+    color: hsl(0, 0%, 100%);
+    padding: 20px 50px;
+}
+
 .detailed-summary {
     background-color: white;
     color: black;
     padding: 10px 40px;  
+    border-radius: 20px;
 }
 
 .summary {
@@ -60,7 +58,6 @@ div p {
     font-weight: 100;
 }
 
-
 .bold {
     font-weight: 1000;
 }
@@ -75,7 +72,7 @@ div p {
 }
 
 button {
-    margin: 10px 0px;
+    margin: 20px 0px 0px 0px;
     background-color:  hsl(224, 30%, 27%);
     color: white;
     padding: 10px 20px;
@@ -85,8 +82,6 @@ button {
 
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
-    padding-bottom: 10px;
 }
 
 .attribution a { 
@@ -119,17 +114,25 @@ button:hover {
 .slash {
     margin-left: 5px;
 }
-  
-h3 {
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
 
 h1 {
     font-size: 50px;
     margin-top: 20px;
     margin-bottom: 0px;
 }
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+.container {
+    box-shadow: 0px 0px 30px #ddd;
+    border-radius: 20px;
+    
+}
+
 @media (max-width: 767px) {
     .result-summary {
         border-radius: 0px 0px 20px 20px;
@@ -139,14 +142,15 @@ h1 {
         justify-content: center;
     }
 
+    body {
+        max-width: 375px;
+    }
+
 }
 
 @media (min-width: 768px) {
-    .desktop-container {
+    .container {
         display: flex;
-        align-self: center;
-        box-shadow: 0px 0px 30px #ddd;
-        border-radius: 20px;
     }
     .result-summary {
         width: 50%;
@@ -159,7 +163,6 @@ h1 {
     }
     .detailed-summary {
         width: 50%;
-        border-radius: 20px;
     }
 
     .attribution {
