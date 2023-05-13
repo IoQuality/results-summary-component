@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <link name="stylesheet" rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100&display=swap" rel="stylesheet">
@@ -13,17 +13,19 @@
 
 </head>
 <body>
-  <main>
+  <main class="desktop-container">
     <div class="result-summary">
-      Your Result
-      <h1>76</h1>
-      <div id="out-of" class="lighter">of 100</div>
-
-      <h3>Great</h3>
-      <p>You scored higher than 65% of the people who have taken these tests.
+      <div class="light-text">Your Result</div>
+      <div class="circle">
+        <h1>76</h1>
+        <div id="out-of" class="lighter">of 100</div>
       </div>
+
+      <h2>Great</h2>
+      <p class="">You scored higher than 65% of the people who have taken these tests.
+    </div>
     <div class="detailed-summary bold">
-      <div class="left-aligned">
+      <div class="summary left-aligned">
         Summary
       </div>
 
@@ -71,12 +73,13 @@
           <span class="regular slash">/ 100</span>
         </span>
       </div>
-      <button type="button" id="continue" alt="Continue" value="Continue">Continue</button>
+      <button type="button" id="continue" value="Continue">Continue</button>
+      <div class="attribution">
+        <h3>Coded by <a href="https://github.com/IoQuality">Karolina</a></h3>
+      </div>
     </div>
   
-  <div class="attribution">
-      Coded by <a href="https://github.com/IoQuality">Karolina</a>.
-  </div>
 </main>
 </body>
+  
 </html>
