@@ -128,7 +128,6 @@ h2 {
 
 
 .container {
-    box-shadow: 0px 0px 30px #ddd;
     border-radius: 20px;
     
 }
@@ -143,7 +142,7 @@ h2 {
     }
 
     body {
-        max-width: 375px;
+        max-width: 380px;
     }
 
 }
@@ -151,6 +150,7 @@ h2 {
 @media (min-width: 768px) {
     .container {
         display: flex;
+        box-shadow: 0px 0px 30px #ddd;
     }
     .result-summary {
         width: 50%;
